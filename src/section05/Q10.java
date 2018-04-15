@@ -13,7 +13,7 @@ public class Q10 {
 			boolean isPrimeNumber = true;
 
 			for (int i = 2; i < number; i++) {
-				if (number % 5 == 0 && number % 5 == 0) { olmadiiiiii
+				if (number % 5 == 0 && number % 5 == 0) { 
 					isPrimeNumber = false;
 				}
 
@@ -26,4 +26,10 @@ public class Q10 {
 		}
 	}
 
+}
+
+for (int i = 100; i < 1000; i++) {
+	if (i % 5 == 0 && i % 5 == 0) {
+		System.out.println("Number " + i + " can be devide 5 and 6");
+	}
 }

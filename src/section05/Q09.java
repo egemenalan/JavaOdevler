@@ -14,7 +14,7 @@ public class Q09 {
 		int secondHighestGrade = 0;
 		String highestGradeName = "";
 		String secondHighestGradeName = "";
-
+		
 		for (int i = 0; i < studentsNumber; i++) {
 			System.out.print("Student: " + (i + 1) + "\n   Name: ");
 			String studentName = input.next();
@@ -23,12 +23,17 @@ public class Q09 {
 			int grade = input.nextInt();
 
 			if (grade > highestGrade) {
+				
+				secondHighestGrade = highestGrade;
+				secondHighestGradeName = highestGradeName;
+				
 				highestGrade = grade;
 				highestGradeName = studentName;
-				if (grade > secondHighestGrade && secondHighestGrade < highestGrade) {  ikinci yuksek notu cikartamadim
-					secondHighestGrade = grade;
-					secondHighestGradeName = studentName;
-				}
+				
+			} else if (grade > secondHighestGrade) {
+				secondHighestGrade = grade;
+				secondHighestGradeName = studentName;
+				
 			}
 
 		}
